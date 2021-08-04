@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cookbook_ps",
+  "info": {
+    "name": "cookbook-p"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CookbookPlatform": {
+      "type": "string"
+    },
+    "Recipes": {
+      "type": "string"
+    }
+  }
+}

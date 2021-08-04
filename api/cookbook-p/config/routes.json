@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cookbook-ps",
+      "handler": "cookbook-p.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cookbook-ps/count",
+      "handler": "cookbook-p.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cookbook-ps/:id",
+      "handler": "cookbook-p.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cookbook-ps",
+      "handler": "cookbook-p.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cookbook-ps/:id",
+      "handler": "cookbook-p.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cookbook-ps/:id",
+      "handler": "cookbook-p.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
