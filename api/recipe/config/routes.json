@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/cookbook-ps",
-      "handler": "cookbook-p.find",
+      "path": "/recipes",
+      "handler": "recipe.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/cookbook-ps/count",
-      "handler": "cookbook-p.count",
+      "path": "/recipes/count",
+      "handler": "recipe.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/cookbook-ps/:id",
-      "handler": "cookbook-p.findOne",
+      "path": "/recipes/:id",
+      "handler": "recipe.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/cookbook-ps",
-      "handler": "cookbook-p.create",
+      "path": "/recipes",
+      "handler": "recipe.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/cookbook-ps/:id",
-      "handler": "cookbook-p.update",
+      "path": "/recipes/:id",
+      "handler": "recipe.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/cookbook-ps/:id",
-      "handler": "cookbook-p.delete",
+      "path": "/recipes/:id",
+      "handler": "recipe.delete",
       "config": {
         "policies": []
       }

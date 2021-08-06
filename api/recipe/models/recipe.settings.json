@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recipes",
+  "info": {
+    "name": "recipe"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "method": {
+      "type": "text",
+      "required": true,
+      "default": "Add the recipe method"
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "default": "recipe description"
+    },
+    "cooktime": {
+      "type": "integer",
+      "required": true,
+      "default": 20
+    },
+    "vegetarian": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "difficulty": {
+      "type": "enumeration",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ],
+      "required": true,
+      "default": "medium"
+    },
+    "picture": {
+      "type": "string",
+      "required": true
+    },
+    "nationality": {
+      "type": "enumeration",
+      "enum": [
+        "Indian",
+        "Italian",
+        "Arabic",
+        "Mexican",
+        "Chinese",
+        "Others"
+      ],
+      "required": true,
+      "default": "Others"
+    }
+  }
+}
